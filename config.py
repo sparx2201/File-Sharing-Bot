@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hey {first}\n\nI am 𝐂𝐨𝐝𝐞-𝐀𝟏𝟒, /nthe Exclusive File Guardian /nand my job to protect our files and give access to /nusers on Special Commands...")
+START_MSG = os.environ.get("START_MESSAGE", "Hey {first}\n\nI am 𝐂𝐨𝐝𝐞-𝐀𝟏𝟒, /nthe Exclusive File Guardian of @Animeke14hai /nand my job to protect our files and give access to /nusers on Special Commands...")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -46,7 +46,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hey {first}\n\n<b>You need to join in our Channel \nOnly after that I will be able to give you access to our files.</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hey {first}\n\n<b>You need to join in our Channel \nonly after that I will be able to give you access to our files.</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
